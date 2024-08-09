@@ -75,4 +75,60 @@ print(smokers_tip_median)
 
 #Non-smokers
 
+non_smokers_tip_min = pd.to_numeric(non_smokers_df['tip']).min()
 
+non_smokers_tip_max = pd.to_numeric(non_smokers_df['tip']).max()
+
+non_smokers_tip_mean = pd.to_numeric(non_smokers_df['tip']).mean()
+
+non_smokers_tip_median = pd.to_numeric(non_smokers_df['tip']).median()
+
+print(non_smokers_tip_min)
+
+print(non_smokers_tip_max)
+
+print(non_smokers_tip_mean)
+
+print(non_smokers_tip_median)
+
+**Look at histograms**
+
+# Plot the histogram
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(15, 5))
+
+plt.hist(data.tip, bins = 5, color = '#74b9ff')
+
+# Customize the plot
+
+plt.xlabel('Tip value')
+
+plt.ylabel('Frequency')
+
+plt.title('Whole dataset tip values')
+
+plt.grid(True)
+
+# Show the plot
+
+plt.show()
+
+#**Smokers tips histogram**
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Plot the histogram
+plt.figure(figsize=(15, 5))
+plt.hist(smokers_tips.tip, bins = 5, color = '#ff7675')
+
+# Customize the plot
+plt.xlabel('Tip value')
+plt.ylabel('Frequency')
+plt.title('Smokers tip values')
+plt.grid(True)
+
+# Show the plot
+plt.show()
