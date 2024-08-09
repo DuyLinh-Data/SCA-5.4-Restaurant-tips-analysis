@@ -1,6 +1,6 @@
 # Session-5.4-Restaurant-tips-analysis
 **1.The First Steps**
-#-Data import # PUT YOUR CODE HERE
+#Data import
 
 import pandas as pd
 import matplotlib as plt
