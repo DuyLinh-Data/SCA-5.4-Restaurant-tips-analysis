@@ -28,3 +28,15 @@ data.info()
 data.describe()
 
 **2.Tip value influencers**
+
+#Create a new dataframe smokers_df containing only info about smokers:
+
+smokers_df = data.query('smoker =="Yes"')
+
+smokers_df.sample(5)
+
+#Also create another one dataframe non_smokers_df containing only non-smokers:
+
+non_smokers_df = data.query('smoker =="No"')
+
+non_smokers_df.sample(5)
