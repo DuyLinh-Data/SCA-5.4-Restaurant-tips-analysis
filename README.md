@@ -1,5 +1,5 @@
 # Session-5.4-Restaurant-tips-analysis
-1.The First Steps
+**1.The First Steps**
 #Data import # PUT YOUR CODE HERE
 
 import pandas as pd
