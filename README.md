@@ -58,8 +58,21 @@ common_tip_median = data['tip'].median()
 #Smokers
 
 non_smokers_tip_min = pd.to_numeric(smokers_df['tip']).min()
+
 non_smokers_tip_max = pd.to_numeric(smokers_df['tip']).max()
+
 non_smokers_tip_mean = pd.to_numeric(smokers_df['tip']).mean()
+
 non_smokers_tip_median = pd.to_numeric(smokers_df['tip']).median()
+
+print(smokers_tip_min)
+
+print(smokers_tip_max)
+
+print(smokers_tip_mean)
+
+print(smokers_tip_median)
+
+#Non-smokers
 
 
