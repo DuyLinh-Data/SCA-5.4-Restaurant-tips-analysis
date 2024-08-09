@@ -38,4 +38,7 @@ smokers_df.sample(5)
 #Also create another one dataframe non_smokers_df containing only non-smokers:
 
 non_smokers_df = data.query('smoker =="No"')
+
 non_smokers_df.sample(5)
+
+**Compare their measures of central tendency**
