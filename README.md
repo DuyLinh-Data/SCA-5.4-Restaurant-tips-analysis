@@ -139,3 +139,30 @@ plt.grid(True)
 
 # Show the plot
 plt.show()
+
+#**Non-smokers tips histogram**
+
+import pandas as pd
+
+import matplotlib.pyplot as plt
+
+non_smokers_tips = pd.DataFrame({'tip': [1, 2, 3, 4, 5]})
+
+# Plot the histogram
+
+plt.figure(figsize=(15, 5))
+
+plt.hist(non_smokers_tips['tip'], bins=5, color='#55efc4')
+
+# Customize the plot
+
+plt.xlabel('Tip value')
+
+plt.ylabel('Frequency')
+
+plt.title('Non-smokers tip values')
+
+plt.grid(True)
+
+# Show the plot
+plt.show()
