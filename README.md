@@ -42,3 +42,24 @@ non_smokers_df = data.query('smoker =="No"')
 non_smokers_df.sample(5)
 
 **Compare their measures of central tendency**
+
+#Calculate them for the 'tip' column:
+
+data['tip'] = pd.to_numeric(data['tip'], errors='coerce')
+
+common_tip_min = data['tip'].min()
+
+common_tip_max = data['tip'].max()
+
+common_tip_mean = data['tip'].mean()
+
+common_tip_median = data['tip'].median()
+
+#Smokers
+
+non_smokers_tip_min = pd.to_numeric(smokers_df['tip']).min()
+non_smokers_tip_max = pd.to_numeric(smokers_df['tip']).max()
+non_smokers_tip_mean = pd.to_numeric(smokers_df['tip']).mean()
+non_smokers_tip_median = pd.to_numeric(smokers_df['tip']).median()
+
+
