@@ -26,3 +26,5 @@ data = data.astype(str)
 data.info()
 
 data.describe()
+
+**2.Tip value influencers**
