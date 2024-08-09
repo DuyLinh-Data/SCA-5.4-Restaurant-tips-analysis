@@ -6,11 +6,11 @@ import pandas as pd
 
 import matplotlib as plt
 
-# Then load data from the following link: https://raw.githubusercontent.com/RusAbk/sca_datasets/main/tips.csv:
+# Load data from the link:
 
 data = pd.read_csv("https://raw.githubusercontent.com/RusAbk/sca_datasets/main/tips.csv")
 
-# Let's take a look at the first 5 rows to be sure, that data is loaded properly:     
+# Look at the first 5 rows:   
 
 data.head()
 
@@ -118,18 +118,23 @@ plt.show()
 #**Smokers tips histogram**
 
 import pandas as pd
+
 import matplotlib.pyplot as plt
 
 # Plot the histogram
 
 plt.figure(figsize=(15, 5))
+
 plt.hist(smokers_tips.tip, bins = 5, color = '#ff7675')
 
 # Customize the plot
 
 plt.xlabel('Tip value')
+
 plt.ylabel('Frequency')
+
 plt.title('Smokers tip values')
+
 plt.grid(True)
 
 # Show the plot
