@@ -50,6 +50,10 @@ This project explores tipping behavior in a restaurant setting using Python. The
 <img width="790" height="490" alt="tipmalefemale" src="https://github.com/user-attachments/assets/46c49055-dcc3-42a3-a681-687c082e104d" />
 
 - 📅 Weekends (Sat & Sun) show **higher total bills and tips**.
+
+<img width="790" height="490" alt="tipwkwday" src="https://github.com/user-attachments/assets/a4844055-da35-4cb5-8517-596758401d73" />
+
+
 - 💸 Tip percentage varies more at lower bill sizes.
 
 ---
