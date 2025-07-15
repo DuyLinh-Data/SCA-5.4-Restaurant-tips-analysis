@@ -80,6 +80,11 @@ This project explores tipping behavior in a restaurant setting using Python. The
 
 ├── README.md
 
+
+git clone https://github.com/yourusername/restaurant-tips-analysis.git
+cd restaurant-tips-analysis
+
+
 📬 Contact<br>
 Nguyễn Duy Linh<br>
 Email: linhnguyen.asia@gmail.com<br>
