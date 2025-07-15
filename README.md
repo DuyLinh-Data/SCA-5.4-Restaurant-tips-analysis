@@ -46,6 +46,9 @@ This project explores tipping behavior in a restaurant setting using Python. The
 
   
 - 👩‍🦰 No significant difference between male and female tipping behavior after removing outliers.
+
+<img width="790" height="490" alt="tipmalefemale" src="https://github.com/user-attachments/assets/46c49055-dcc3-42a3-a681-687c082e104d" />
+
 - 📅 Weekends (Sat & Sun) show **higher total bills and tips**.
 - 💸 Tip percentage varies more at lower bill sizes.
 
