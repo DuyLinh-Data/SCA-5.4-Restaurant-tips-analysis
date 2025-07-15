@@ -1,169 +1,62 @@
-# Session-5.4-Restaurant-tips-analysis
-**1.The First Steps**
-# Data import
+# 🍽️ Restaurant Tips Analysis
 
-import pandas as pd
+This project explores tipping behavior in a restaurant setting using Python. The goal is to identify patterns and factors that influence how much customers tip, such as time of day, gender, meal size, and day of the week.
 
-import matplotlib as plt
+![Restaurant Analysis](images/tips_dashboard_example.png)
 
-# Load data from the link:
+---
 
-data = pd.read_csv("https://raw.githubusercontent.com/RusAbk/sca_datasets/main/tips.csv")
+## 🎯 Objectives
 
-# Look at the first 5 rows:   
+- Understand how different variables affect the amount of tips.
+- Visualize relationships and distributions among key features.
+- Detect outliers and test hypotheses (e.g., gender differences in tipping).
+- Summarize actionable insights using data storytelling techniques.
 
-data.head()
+---
 
-# Show the columns of the dataframe and their types:
+## 📊 Dataset
 
-data.info()
-data.describe()
+- **Source**: Built-in `seaborn` dataset `tips`
+- **Rows**: 244 records
+- **Columns**:
+  - `total_bill`, `tip`, `sex`, `smoker`, `day`, `time`, `size`
 
-# Fix their types and make them string + Check info:
+---
 
-data = data.astype(str)
+## 🧪 Key Analysis Performed
 
-data.info()
+- Descriptive statistics & data cleaning
+- Correlation analysis (Pearson)
+- Boxplots to compare tipping across:
+  - Time (Lunch vs Dinner)
+  - Gender
+  - Days of the week
+- Outlier detection (IQR)
+- Hypothesis testing: gender vs tip amount
+- Feature engineering (e.g., tip ratio, bill categories)
 
-data.describe()
+---
 
-**2.Tip value influencers**
+## 📍 Key Insights
 
-# Create a new dataframe smokers_df containing only info about smokers:
+- 🕒 **Dinner tips are usually higher** than lunch tips.
+- 👩‍🦰 No significant difference between male and female tipping behavior after removing outliers.
+- 📅 Weekends (Sat & Sun) show **higher total bills and tips**.
+- 💸 Tip percentage varies more at lower bill sizes.
 
-smokers_df = data.query('smoker =="Yes"')
+---
 
-smokers_df.sample(5)
+## 🛠️ Technologies Used
 
-# Also create another one dataframe non_smokers_df containing only non-smokers:
+- Python 3.x
+- Jupyter Notebook
+- Pandas, NumPy
+- Seaborn, Matplotlib
+- SciPy (for statistical testing)
 
-non_smokers_df = data.query('smoker =="No"')
+---
 
-non_smokers_df.sample(5)
+## 📁 Folder Structure (if applicable)
 
-**Compare their measures of central tendency**
-
-# Calculate them for the 'tip' column:
-
-data['tip'] = pd.to_numeric(data['tip'], errors='coerce')
-
-common_tip_min = data['tip'].min()
-
-common_tip_max = data['tip'].max()
-
-common_tip_mean = data['tip'].mean()
-
-common_tip_median = data['tip'].median()
-
-# Smokers
-
-non_smokers_tip_min = pd.to_numeric(smokers_df['tip']).min()
-
-non_smokers_tip_max = pd.to_numeric(smokers_df['tip']).max()
-
-non_smokers_tip_mean = pd.to_numeric(smokers_df['tip']).mean()
-
-non_smokers_tip_median = pd.to_numeric(smokers_df['tip']).median()
-
-print(smokers_tip_min)
-
-print(smokers_tip_max)
-
-print(smokers_tip_mean)
-
-print(smokers_tip_median)
-
-# Non-smokers
-
-non_smokers_tip_min = pd.to_numeric(non_smokers_df['tip']).min()
-
-non_smokers_tip_max = pd.to_numeric(non_smokers_df['tip']).max()
-
-non_smokers_tip_mean = pd.to_numeric(non_smokers_df['tip']).mean()
-
-non_smokers_tip_median = pd.to_numeric(non_smokers_df['tip']).median()
-
-print(non_smokers_tip_min)
-
-print(non_smokers_tip_max)
-
-print(non_smokers_tip_mean)
-
-print(non_smokers_tip_median)
-
-**Look at histograms**
-
-# Plot the histogram
-
-import matplotlib.pyplot as plt
-
-plt.figure(figsize=(15, 5))
-
-plt.hist(data.tip, bins = 5, color = '#74b9ff')
-
-# Customize the plot
-
-plt.xlabel('Tip value')
-
-plt.ylabel('Frequency')
-
-plt.title('Whole dataset tip values')
-
-plt.grid(True)
-
-# Show the plot
-
-plt.show()
-
-#**Smokers tips histogram**
-
-import pandas as pd
-
-import matplotlib.pyplot as plt
-
-# Plot the histogram
-
-plt.figure(figsize=(15, 5))
-
-plt.hist(smokers_tips.tip, bins = 5, color = '#ff7675')
-
-# Customize the plot
-
-plt.xlabel('Tip value')
-
-plt.ylabel('Frequency')
-
-plt.title('Smokers tip values')
-
-plt.grid(True)
-
-# Show the plot
-plt.show()
-
-#**Non-smokers tips histogram**
-
-import pandas as pd
-
-import matplotlib.pyplot as plt
-
-non_smokers_tips = pd.DataFrame({'tip': [1, 2, 3, 4, 5]})
-
-# Plot the histogram
-
-plt.figure(figsize=(15, 5))
-
-plt.hist(non_smokers_tips['tip'], bins=5, color='#55efc4')
-
-# Customize the plot
-
-plt.xlabel('Tip value')
-
-plt.ylabel('Frequency')
-
-plt.title('Non-smokers tip values')
-
-plt.grid(True)
-
-# Show the plot
-plt.show()
 
