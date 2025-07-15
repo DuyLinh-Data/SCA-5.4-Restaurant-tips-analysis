@@ -2,7 +2,8 @@
 
 This project explores tipping behavior in a restaurant setting using Python. The goal is to identify patterns and factors that influence how much customers tip, such as time of day, gender, meal size, and day of the week.
 
-![Restaurant Analysis](images/tips_dashboard_example.png)
+![Uploading image.png…]()
+
 
 ---
 
