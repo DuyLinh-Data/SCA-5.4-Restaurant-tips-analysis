@@ -79,3 +79,8 @@ This project explores tipping behavior in a restaurant setting using Python. The
 ├── images/ # Screenshots or charts for presentation
 
 ├── README.md
+
+📬 Contact<br>
+Nguyễn Duy Linh<br>
+Email: linhnguyen.asia@gmail.com<br>
+LinkedIn: [linkedin.com/in/nguyenduylinh](https://www.linkedin.com/in/nguy%E1%BB%85n-duy-linh/)
