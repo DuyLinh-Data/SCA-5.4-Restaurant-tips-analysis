@@ -42,8 +42,7 @@ This project explores tipping behavior in a restaurant setting using Python. The
 
 - 🕒 **Dinner tips are usually higher** than lunch tips.
 
-![Uploading image.png…]()
-
+<img width="1389" height="490" alt="tipdinnerlunch" src="https://github.com/user-attachments/assets/a03ca95a-3acf-4ddd-90a8-1fdff5c2d3f8" />
 
   
 - 👩‍🦰 No significant difference between male and female tipping behavior after removing outliers.
