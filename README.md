@@ -41,6 +41,10 @@ This project explores tipping behavior in a restaurant setting using Python. The
 ## 📍 Key Insights
 
 - 🕒 **Dinner tips are usually higher** than lunch tips.
+
+![Uploading image.png…]()
+
+  
 - 👩‍🦰 No significant difference between male and female tipping behavior after removing outliers.
 - 📅 Weekends (Sat & Sun) show **higher total bills and tips**.
 - 💸 Tip percentage varies more at lower bill sizes.
