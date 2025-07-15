@@ -81,8 +81,17 @@ This project explores tipping behavior in a restaurant setting using Python. The
 ├── README.md
 
 
+
+---
+
+## 🚀 How to Run
+
+1. Clone this repository:
+```bash
 git clone https://github.com/yourusername/restaurant-tips-analysis.git
 cd restaurant-tips-analysis
+jupyter notebook notebooks/[5.4] Restaurant tips analysis.ipynb
+
 
 
 📬 Contact<br>
