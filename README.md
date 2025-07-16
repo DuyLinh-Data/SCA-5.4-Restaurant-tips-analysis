@@ -68,15 +68,14 @@ This project explores tipping behavior in a restaurant setting using Python. The
 
 ---
 
-## 📁 Folder Structure (if applicable)
+## 📁 Folder Structure 
 
-├── data/ # (Optional if you save images or large files)
 
 ├── notebooks/
 
 │ └── [5.4] Restaurant tips analysis.ipynb
 
-├── images/ # Screenshots or charts for presentation
+├── images/ 
 
 ├── README.md
 
