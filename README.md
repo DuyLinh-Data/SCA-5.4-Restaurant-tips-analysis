@@ -105,6 +105,6 @@ This project is released under the MIT License – feel free to use and adapt wi
 **Nguyễn Duy Linh** • Aspiring Data Analyst passionate about uncovering insights from data.
 
 - 📧 linhnguyen.asia@gmail.com  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/nguy%E1%BB%85n-duy-linh/) • [GitHub](https://github.com/AntoniNguyen123)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/duylinh-data/) • [GitHub](https://github.com/DuyLinh-Data)
 
 _“It’s not about having data, it’s about what you do with it.”_ 🚀
